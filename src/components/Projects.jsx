@@ -40,7 +40,7 @@ const Projects = () => {
 
         <div style={styles.card}>
   <a
-    href="https://github.com/HasiniRachamadugu/Portfolio"
+    href="https://github.com/HasiniRachamadugu/Personal-Portfolio"
     target="_blank"
     rel="noreferrer"
     style={styles.githubBtn}
