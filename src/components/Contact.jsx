@@ -2,58 +2,68 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" style={styles.section}>
-      <h2 style={styles.heading}>Contact</h2>
+    <section id="contact">
+      <h2>Contact</h2>
 
-      <div style={styles.info}>
-        <p>
-          📧 Email:
+      <div style={styles.contactBox}>
+        <div style={styles.item}>
+          <span style={styles.icon}>📧</span>
           <a
-            href="mailto:pnvhasini@gmail.com"
-            style={styles.link}
-          >
-            {" "}pnvhasini@gmail.com
-          </a>
-        </p>
+  href="mailto:pnvhasini@gmail.com"
+  style={styles.link}
+  onMouseOver={(e) => (e.target.style.textDecoration = "none")}
+  onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+>
+  pnvhasini@gmail.com
+</a>
 
-        <p>
-          📞 Phone:
+        </div>
+
+        <div style={styles.item}>
+          <span style={styles.icon}>📞</span>
           <a
             href="tel:+919948362628"
             style={styles.link}
           >
-            {" "}+91 9948362628
+            +91 99483 62628
           </a>
-        </p>
+        </div>
 
-        <p>📍 Bhimavaram, Andhra Pradesh</p>
+        <div style={styles.item}>
+          <span style={styles.icon}>📍</span>
+          <span>Bhimavaram, Andhra Pradesh</span>
+        </div>
       </div>
     </section>
   );
 };
 
 const styles = {
-  section: {
-    marginTop: "40px",
-    marginBottom: "80px",
+  contactBox: {
+    marginTop: "20px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "14px",
+    maxWidth: "420px",
   },
 
-  heading: {
-    fontSize: "36px",
-    marginBottom: "25px",
+  item: {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    fontSize: "15px",
+    color: "#cccccc",
   },
 
-  info: {
-    color: "#b3b3b3",
+  icon: {
     fontSize: "16px",
-    lineHeight: "2",
   },
 
   link: {
-    color: "#ffffff",
-    textDecoration: "underline",
-    cursor: "pointer",
-  },
+  color: "#ffffff",
+  textDecoration: "none",   
+},
+
 };
 
 export default Contact;
