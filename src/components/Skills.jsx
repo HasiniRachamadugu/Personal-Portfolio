@@ -2,12 +2,15 @@ import React from "react";
 
 const Skills = () => {
   const skills = [
+    "C",
     "Java",
     "Python",
     "React",
     "Spring Boot",
     "MySQL",
     "Git & GitHub",
+    "HTML",
+    "CSS",
   ];
 
   return (
@@ -37,29 +40,28 @@ const styles = {
 
   /* ONE ROW */
   row: {
-    display: "flex",
-    gap: "25px",
-    alignItems: "center",
-    overflowX: "auto",       // keeps one row on small screens
-    paddingBottom: "10px",
-  },
+  display: "flex",
+  flexWrap: "wrap",          // ✅ allows next row
+  gap: "20px",
+  alignItems: "center",
+},
+
 
   /* BIG RECTANGLE BOX */
   box: {
-    minWidth: "160px",
-    height: "70px",
-    background: "#1a1a1a",
-    border: "1px solid #2a2a2a",
-    borderRadius: "10px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "16px",
-    fontWeight: "500",
-    whiteSpace: "nowrap",
-    transition: "0.3s",
+  minWidth: "160px",
+  height: "70px",
+  background: "#1a1a1a",
+  border: "1px solid #2a2a2a",
+  borderRadius: "10px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "16px",
+  fontWeight: "500",
+  whiteSpace: "nowrap",
+},
 
-  },
 };
 
 export default Skills;
