@@ -1,0 +1,73 @@
+import React from "react";
+
+const Projects = () => {
+  return (
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div style={styles.container}>
+        {/* PROJECT 1 */}
+        <div style={styles.card}>
+          <a
+            href="https://github.com/HasiniRachamadugu/ATM-Simulation"
+            target="_blank"
+            rel="noreferrer"
+            style={styles.githubBtn}
+            title="View on GitHub"
+          >
+            GitHub
+          </a>
+
+          <h3>ATM Simulation System</h3>
+          <p>Java | Spring Boot | MySQL</p>
+        </div>
+
+        {/* PROJECT 2 */}
+        <div style={styles.card}>
+          <a
+            href="https://github.com/HasiniRachamadugu/GuideU"
+            target="_blank"
+            rel="noreferrer"
+            style={styles.githubBtn}
+            title="View on GitHub"
+          >
+            GitHub
+          </a>
+
+          <h3>GuideU – Student Mentorship Platform</h3>
+          <p>React | Firebase</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+    marginTop: "20px",
+  },
+
+  card: {
+    position: "relative",        // 🔴 IMPORTANT
+    padding: "24px",
+    background: "#1a1a1a",
+    borderRadius: "8px",
+  },
+
+  githubBtn: {
+    position: "absolute",        // 🔴 IMPORTANT
+    top: "16px",
+    right: "16px",
+    textDecoration: "none",
+    color: "#ffffff",
+    border: "1px solid #ffffff",
+    padding: "6px 14px",
+    borderRadius: "20px",
+    fontSize: "13px",
+  },
+};
+
+export default Projects;

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 40px 10%;
+}
+
+section:not(:first-child) {
+  padding-top: 30px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section + section {
+  margin-top: 20px;
+}
+
+.project-card {
+  margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
