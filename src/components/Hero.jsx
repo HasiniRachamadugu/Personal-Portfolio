@@ -90,7 +90,7 @@ const styles = {
     height: "100%",
     objectFit: "cover",
     objectPosition: "center top",
-    filter: "grayscale(100%) brightness(1.15) contrast(1.05)",
+    filter: "grayscale(100%) brightness(1.25) contrast(1.25)",
   },
 
   overlay: {
