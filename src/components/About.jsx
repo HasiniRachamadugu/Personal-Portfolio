@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about">
+  <section id="about" style={{ marginTop: "40px" }}>
   <h2>About Me</h2>
 
       <p
