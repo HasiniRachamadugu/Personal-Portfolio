@@ -37,6 +37,21 @@ const Projects = () => {
           <h3>GuideU – Student Mentorship Platform</h3>
           <p>React | Firebase</p>
         </div>
+
+        <div style={styles.card}>
+  <a
+    href="https://github.com/HasiniRachamadugu/Portfolio"
+    target="_blank"
+    rel="noreferrer"
+    style={styles.githubBtn}
+  >
+     GitHub
+  </a>
+
+  <h3>Personal Portfolio Website</h3>
+  <p>React | JavaScript | CSS</p>
+</div>
+
       </div>
     </section>
   );
