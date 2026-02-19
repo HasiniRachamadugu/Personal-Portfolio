@@ -1,14 +1,17 @@
 import React from "react";
 import resume from "../assets/resume.pdf";
 
-
 const Hero = () => {
   return (
     <section id="home" className="hero" style={styles.hero}>
+      
       {/* LEFT IMAGE */}
       <div className="hero-left" style={styles.left}>
-        <img src="/profile.jpg" alt="Profile" style={styles.image} />
-        <div style={styles.overlay}></div>
+        <img
+          src="/profile.jpg"
+          alt="Profile"
+          style={styles.image}
+        />
       </div>
 
       {/* RIGHT CONTENT */}
@@ -21,29 +24,29 @@ const Hero = () => {
           Second-year B.Tech Information Technology student passionate about
           Java, React, and full-stack development.
         </p>
-        <br />
 
-        {/* ACTION BUTTONS */}
-<div style={styles.buttons}>
-  <a href="#about" style={styles.primaryBtn}>Explore Now</a>
-  
+        {/* BUTTONS */}
+        <div style={styles.buttons}>
+          <a href="#about" style={styles.primaryBtn}>
+            Explore Now
+          </a>
 
-  <button
-  onClick={() => window.open(resume, "_blank")}
-  style={styles.secondaryBtn}
-  onMouseOver={(e) => {
-    e.target.style.background = "#ffffff";
-    e.target.style.color = "#000000";
-  }}
-  onMouseOut={(e) => {
-    e.target.style.background = "transparent";
-    e.target.style.color = "#ffffff";
-  }}
->
-  View Resume
-</button>
+          <button
+            onClick={() => window.open(resume, "_blank")}
+            style={styles.secondaryBtn}
+            onMouseOver={(e) => {
+              e.target.style.background = "#ffffff";
+              e.target.style.color = "#000000";
+            }}
+            onMouseOut={(e) => {
+              e.target.style.background = "transparent";
+              e.target.style.color = "#ffffff";
+            }}
+          >
+            View Resume
+          </button>
+        </div>
 
-</div>
         {/* SOCIAL LINKS */}
         <div style={styles.socials}>
           <a
@@ -54,6 +57,7 @@ const Hero = () => {
           >
             GitHub
           </a>
+
           <a
             href="https://www.linkedin.com/in/hasini-rachamadugu-80673a321"
             target="_blank"
@@ -74,7 +78,7 @@ const styles = {
     height: "100vh",
   },
 
-  /* LEFT IMAGE */
+  /* IMAGE SIDE */
   left: {
     width: "50%",
     height: "100vh",
@@ -83,16 +87,13 @@ const styles = {
   },
 
   image: {
-    width: "85%",
-    height: "85%",
+    width: "100%",
+    height: "100%",
     objectFit: "cover",
     objectPosition: "center top",
-   
   },
 
-  
-
-  /* RIGHT CONTENT */
+  /* CONTENT SIDE */
   right: {
     width: "50%",
     padding: "100px",
@@ -109,54 +110,38 @@ const styles = {
   },
 
   text: {
-  fontSize: "16px",
-  lineHeight: "1.6",
-  maxWidth: "420px",
-  marginTop: "10px",
-  color: "#bdbdbd",
-},
-
+    fontSize: "16px",
+    lineHeight: "1.6",
+    maxWidth: "420px",
+    marginTop: "10px",
+    color: "#bdbdbd",
+  },
 
   buttons: {
-  display: "flex",
-  gap: "14px",
-  marginBottom: "20px",
-  flexWrap: "wrap",     
-  alignItems: "center",
-},
-
-
+    display: "flex",
+    gap: "14px",
+    margin: "25px 0",
+    flexWrap: "wrap",
+  },
 
   primaryBtn: {
-  padding: "12px 22px",
-  background: "#ffffff",
-  color: "#000",
-  textDecoration: "none",
-  fontSize: "14px",
-  borderRadius: "4px",
-  whiteSpace: "nowrap",   // ✅ IMPORTANT
-},
-
-secondaryBtn: {
-  padding: "12px 26px",
-  border: "1px solid #ffffff",
-  background: "transparent",
-  color: "#ffffff",
-  fontSize: "14px",
-  borderRadius: "4px",
-  cursor: "pointer",
-  whiteSpace: "nowrap",
-},
-
-
-
-  resumeBtn: {
-    padding: "12px 26px",
-    border: "1px dashed #ffffff",
-    color: "#ffffff",
-    textDecoration: "none",
+    padding: "12px 22px",
+    background: "#ffffff",
+    color: "#000",
     fontSize: "14px",
     borderRadius: "4px",
+    whiteSpace: "nowrap",
+  },
+
+  secondaryBtn: {
+    padding: "12px 26px",
+    border: "1px solid #ffffff",
+    background: "transparent",
+    color: "#ffffff",
+    fontSize: "14px",
+    borderRadius: "4px",
+    cursor: "pointer",
+    whiteSpace: "nowrap",
   },
 
   socials: {
@@ -170,16 +155,7 @@ secondaryBtn: {
     borderRadius: "20px",
     fontSize: "13px",
     color: "#b3b3b3",
-    textDecoration: "none",
   },
-
-  secondaryBtnHover: {
-  background: "#ffffff",
-  color: "#000000",
-},
-
-
-
 };
 
 export default Hero;
