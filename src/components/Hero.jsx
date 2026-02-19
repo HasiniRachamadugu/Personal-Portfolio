@@ -4,15 +4,15 @@ import resume from "../assets/resume.pdf";
 
 const Hero = () => {
   return (
-    <section id="home" style={styles.hero}>
+    <section id="home" className="hero" style={styles.hero}>
       {/* LEFT IMAGE */}
-      <div style={styles.left}>
+      <div className="hero-left" style={styles.left}>
         <img src="/profile.jpg" alt="Profile" style={styles.image} />
         <div style={styles.overlay}></div>
       </div>
 
       {/* RIGHT CONTENT */}
-      <div style={styles.right}>
+      <div className="hero-right" style={styles.right}>
         <h1 style={styles.name}>
           Rachamadugu <br /> Hasini
         </h1>

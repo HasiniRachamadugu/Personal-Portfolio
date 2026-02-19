@@ -17,7 +17,7 @@ const Skills = () => {
     <section id="skills" style={styles.section}>
       <h2 style={styles.heading}>Skills</h2>
 
-      <div style={styles.row}>
+      <div style={styles.grid}>
         {skills.map((skill) => (
           <div key={skill} style={styles.box}>
             {skill}
@@ -31,6 +31,7 @@ const Skills = () => {
 const styles = {
   section: {
     marginTop: "0px",
+    width: "100%",
   },
 
   heading: {
@@ -38,30 +39,26 @@ const styles = {
     marginBottom: "30px",
   },
 
-  /* ONE ROW */
-  row: {
-  display: "flex",
-  flexWrap: "wrap",          // ✅ allows next row
-  gap: "20px",
-  alignItems: "center",
-},
+  /* RESPONSIVE GRID */
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+    gap: "20px",
+    width: "100%",
+  },
 
-
-  /* BIG RECTANGLE BOX */
+  /* SKILL BOX */
   box: {
-  minWidth: "160px",
-  height: "70px",
-  background: "#1a1a1a",
-  border: "1px solid #2a2a2a",
-  borderRadius: "10px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  fontSize: "16px",
-  fontWeight: "500",
-  whiteSpace: "nowrap",
-},
-
+    height: "70px",
+    background: "#1a1a1a",
+    border: "1px solid #2a2a2a",
+    borderRadius: "10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "16px",
+    fontWeight: "500",
+  },
 };
 
 export default Skills;

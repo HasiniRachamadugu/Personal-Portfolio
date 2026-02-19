@@ -55,3 +55,53 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 6%;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-right {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .skill-box {
+    flex: 1 1 calc(50% - 12px);
+    text-align: center;
+  }
+}
