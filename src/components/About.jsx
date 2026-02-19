@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-  <section id="about" style={{ marginTop: "40px" }}>
+  <section id="about" style={{ scrollMarginTop: "90px" }}>
+
   <h2>About Me</h2>
 
       <p

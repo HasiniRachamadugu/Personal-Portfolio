@@ -21,6 +21,7 @@ const Hero = () => {
           Second-year B.Tech Information Technology student passionate about
           Java, React, and full-stack development.
         </p>
+        <br />
 
         {/* ACTION BUTTONS */}
 <div style={styles.buttons}>
@@ -43,10 +44,6 @@ const Hero = () => {
 </button>
 
 </div>
-
-
-
-
         {/* SOCIAL LINKS */}
         <div style={styles.socials}>
           <a
@@ -86,19 +83,14 @@ const styles = {
   },
 
   image: {
-    width: "100%",
-    height: "100%",
+    width: "85%",
+    height: "85%",
     objectFit: "cover",
     objectPosition: "center top",
-    filter: "grayscale(100%) brightness(1.25) contrast(1.25)",
+   
   },
 
-  overlay: {
-    position: "absolute",
-    inset: 0,
-    background:
-      "linear-gradient(to right, rgba(0,0,0,0.25), rgba(0,0,0,0.65))",
-  },
+  
 
   /* RIGHT CONTENT */
   right: {
@@ -117,18 +109,19 @@ const styles = {
   },
 
   text: {
-    color: "#b3b3b3",
-    fontSize: "16px",
-    maxWidth: "420px",
-    marginBottom: "40px",
-    lineHeight: "1.7",
-  },
+  fontSize: "16px",
+  lineHeight: "1.6",
+  maxWidth: "420px",
+  marginTop: "10px",
+  color: "#bdbdbd",
+},
+
 
   buttons: {
   display: "flex",
   gap: "14px",
-  marginBottom: "30px",
-  flexWrap: "nowrap",     // ✅ FORCE SAME ROW
+  marginBottom: "20px",
+  flexWrap: "wrap",     
   alignItems: "center",
 },
 
@@ -184,6 +177,8 @@ secondaryBtn: {
   background: "#ffffff",
   color: "#000000",
 },
+
+
 
 };
 

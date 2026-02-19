@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" style={{ scrollMarginTop: "90px" }}>
       <h2>Projects</h2>
 
       <div style={styles.container}>
@@ -38,20 +38,20 @@ const Projects = () => {
           <p>React | Firebase</p>
         </div>
 
+        {/* PROJECT 3 */}
         <div style={styles.card}>
-  <a
-    href="https://github.com/HasiniRachamadugu/Personal-Portfolio"
-    target="_blank"
-    rel="noreferrer"
-    style={styles.githubBtn}
-  >
-     GitHub
-  </a>
+          <a
+            href="https://github.com/HasiniRachamadugu/Personal-Portfolio"
+            target="_blank"
+            rel="noreferrer"
+            style={styles.githubBtn}
+          >
+            GitHub
+          </a>
 
-  <h3>Personal Portfolio Website</h3>
-  <p>React | JavaScript | CSS</p>
-</div>
-
+          <h3>Personal Portfolio Website</h3>
+          <p>React | JavaScript | CSS</p>
+        </div>
       </div>
     </section>
   );
@@ -66,14 +66,14 @@ const styles = {
   },
 
   card: {
-    position: "relative",        // 🔴 IMPORTANT
-    padding: "24px",
+    position: "relative",     
+    padding: "20px",
     background: "#1a1a1a",
-    borderRadius: "8px",
+    borderRadius: "12px",
   },
 
   githubBtn: {
-    position: "absolute",        // 🔴 IMPORTANT
+    position: "absolute",
     top: "16px",
     right: "16px",
     textDecoration: "none",

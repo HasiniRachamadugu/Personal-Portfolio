@@ -14,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" style={styles.section}>
+    <section id="skills" style={{ scrollMarginTop: "90px" }}>
       <h2 style={styles.heading}>Skills</h2>
 
       <div style={styles.grid}>

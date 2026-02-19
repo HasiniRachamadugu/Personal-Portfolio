@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" style={{ scrollMarginTop: "90px" }}>
+
       <h2>Contact</h2>
 
       <div style={styles.contactBox}>
